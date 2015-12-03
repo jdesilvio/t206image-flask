@@ -1,0 +1,43 @@
+{% extends "_base.html" %}
+
+{% block content %}
+
+<div class="row">
+
+  <div class="col-md-7">
+    <h2>Select an Image</h2>
+    <br>
+    <div class="row">
+      <div class="col-md-6">
+        <p><img src="https://s3.amazonaws.com/t206/images/test/dbRoger-Bresnahan_St.-Louis-Cardinals_0857f.jpg" style="height: 250px;" class="img"></p>
+        <p><img src="https://s3.amazonaws.com/t206/images/test/dbTy-Cobb_Detroit-Tigers_0940f.jpg" style="height: 250px;" class="img"></p>
+      </div>
+      <div class="col-md-6">
+        <p><img src="https://s3.amazonaws.com/t206/images/test/dbWalter-Johnson_Washington-Nationals_1047f.jpg" style="height: 250px;" class="img"></p>
+        <p><img src="https://s3.amazonaws.com/t206/images/test/dbAddie-Joss_Cleveland-Naps_0923f.jpg" style="height: 250px;" class="img"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3 col-md-offset-1">
+    <h2>Results</h2>
+    <br>
+    <p id="searching">Searching...</p>
+    <p id="error">Oh no! No results! Check your internet connection.</p>
+    <table class="table" id="results-table">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody id="results">
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+<br>
+
+{% endblock %}
